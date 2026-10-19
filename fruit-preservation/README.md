@@ -227,3 +227,6 @@ Xia S. et al. *Preparation and characterization of novel natural pigment-indicat
 ## Word 下载
 
 工作流会把本文件转换为 Word 文档并提交到同一目录。生成后请下载：[果蔬保鲜材料研究_研一组会准备手册.docx](https://github.com/tianyuanxu180-hub/love/raw/refs/heads/main/fruit-preservation/果蔬保鲜材料研究_研一组会准备手册.docx)
+## PDF 下载
+
+PDF 版本将在仓库自动生成后可通过此链接下载：[果蔬保鲜材料研究_研一组会准备手册.pdf](https://github.com/tianyuanxu180-hub/love/raw/refs/heads/main/fruit-preservation/%E6%9E%9C%E8%94%AC%E4%BF%9D%E9%B2%9C%E6%9D%90%E6%96%99%E7%A0%94%E7%A9%B6_%E7%A0%94%E4%B8%80%E7%BB%84%E4%BC%9A%E5%87%86%E5%A4%87%E6%89%8B%E5%86%8C.pdf)
