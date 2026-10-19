@@ -1,4 +1,4 @@
-name: Build fruit preservation Word guide
+name: Build fruit preservation Word and PDF guides
 on:
   push:
     paths:
@@ -8,21 +8,23 @@ on:
 permissions:
   contents: write
 jobs:
-  build-docx:
+  build-documents:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
         with:
           python-version: '3.12'
-      - name: Install python-docx
-        run: pip install python-docx
-      - name: Generate Word document
+      - name: Install document tools and Chinese fonts
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y libreoffice-writer fonts-noto-cjk
+          pip install python-docx
+      - name: Generate Word document from guide
         run: |
           python - <<'PY'
           from docx import Document
           from docx.shared import Inches, Pt, RGBColor
-          from docx.oxml import OxmlElement
           from docx.oxml.ns import qn
           from pathlib import Path
           import re
@@ -33,13 +35,12 @@ jobs:
           sec.left_margin = Inches(0.8); sec.right_margin = Inches(0.8)
           normal = doc.styles['Normal']
           normal.font.name = 'Arial'; normal.font.size = Pt(10.5)
-          normal._element.rPr.rFonts.set(qn('w:eastAsia'), 'Microsoft YaHei')
+          normal._element.rPr.rFonts.set(qn('w:eastAsia'), 'Noto Sans CJK SC')
           for name,size,color in [('Title',24,'1F4E79'),('Heading 1',17,'1F4E79'),('Heading 2',13,'2F5597'),('Heading 3',11,'2F5597')]:
               st=doc.styles[name]; st.font.name='Arial'; st.font.size=Pt(size); st.font.color.rgb=RGBColor.from_string(color)
-              st._element.rPr.rFonts.set(qn('w:eastAsia'),'Microsoft YaHei')
+              st._element.rPr.rFonts.set(qn('w:eastAsia'),'Noto Sans CJK SC')
           def add_rich(p, text):
-              # Basic Markdown emphasis and inline-code handling.
-              for token in re.split(r'(\*\*.*?\*\*|`.*?`)', text):
+              for token in re.split(r'(\\*\\*.*?\\*\\*|`.*?`)', text):
                   if not token: continue
                   if token.startswith('**') and token.endswith('**'):
                       p.add_run(token[2:-2]).bold=True
@@ -74,8 +75,8 @@ jobs:
               elif line.startswith('### '): doc.add_heading(line[4:].strip(),3)
               elif line.startswith('- '):
                   p=doc.add_paragraph(style='List Bullet'); add_rich(p,line[2:])
-              elif re.match(r'^\d+\. ',line):
-                  p=doc.add_paragraph(style='List Number'); add_rich(p,re.sub(r'^\d+\. ','',line))
+              elif re.match(r'^\\d+\\. ',line):
+                  p=doc.add_paragraph(style='List Number'); add_rich(p,re.sub(r'^\\d+\\. ','',line))
               elif line.startswith('> '):
                   p=doc.add_paragraph(style='Quote'); add_rich(p,line[2:])
               else:
@@ -85,10 +86,17 @@ jobs:
           doc.save(out)
           print(f'Created {out} ({out.stat().st_size} bytes)')
           PY
-      - name: Commit generated Word document
+      - name: Convert Word to PDF
+        run: |
+          mkdir -p /tmp/lo-profile
+          libreoffice -env:UserInstallation=file:///tmp/lo-profile --headless --convert-to pdf --outdir fruit-preservation 'fruit-preservation/果蔬保鲜材料研究_研一组会准备手册.docx'
+          test -s 'fruit-preservation/果蔬保鲜材料研究_研一组会准备手册.pdf'
+          file 'fruit-preservation/果蔬保鲜材料研究_研一组会准备手册.pdf'
+          ls -lh fruit-preservation/果蔬保鲜材料研究_研一组会准备手册.*
+      - name: Commit generated Word and PDF
         run: |
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
-          git add 'fruit-preservation/果蔬保鲜材料研究_研一组会准备手册.docx'
-          git commit -m 'Build downloadable fruit preservation Word guide' || echo 'No document changes to commit'
+          git add 'fruit-preservation/果蔬保鲜材料研究_研一组会准备手册.docx' 'fruit-preservation/果蔬保鲜材料研究_研一组会准备手册.pdf'
+          git commit -m 'Build downloadable fruit preservation Word and PDF guides' || echo 'No document changes to commit'
           git push
