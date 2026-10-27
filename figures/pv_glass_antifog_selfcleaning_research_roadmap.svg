@@ -4,7 +4,7 @@
 <rect x="117" y="98" width="10" height="151" rx="0" fill="#128A8B" stroke="none" stroke-width="1"/>
 <text x="155" y="132" font-size="26" font-weight="700" fill="#128A8B" letter-spacing="3.3">RESEARCH ROADMAP  /  SIX-STAGE EXPERIMENTAL PLAN</text>
 <text x="155" y="215" font-size="68" font-weight="730" fill="#183851" >光伏玻璃防雾自清洁界面的分阶段研究计划</text>
-<text x="155" y="270" font-size="29" font-weight="400" fill="#5B7384" >激光微纳结构构筑   ×   TiO₂ 磁控溅射   ×   多功能协同优化</text>
+<text x="155" y="270" font-size="29" font-weight="400" fill="#5B7384" >激光微纳结构构筑   ×   TiO2 磁控溅射   ×   多功能协同优化</text>
 <text x="3173" y="142" font-size="28" font-weight="650" fill="#5B7384" text-anchor="end" letter-spacing="3">FIGURE 07</text>
 <text x="3173" y="185" font-size="22" font-weight="500" fill="#5B7384" text-anchor="end" letter-spacing="2">PROPOSED WORKFLOW</text>
 <line x1="120" y1="306" x2="3180" y2="306" stroke="#D7E3E9" stroke-width="3" stroke-linecap="round"/>
@@ -31,7 +31,7 @@
 <rect x="1182" y="431" width="113" height="43" rx="12" fill="#128A8B" stroke="none" stroke-width="1"/>
 <text x="1202" y="462" font-size="25" font-weight="700" fill="#FFFFFF" >02</text>
 <text x="1314" y="461" font-size="23" font-weight="650" fill="#5B7384" letter-spacing="2">SPUTTERING PROCESS</text>
-<text x="1183" y="530" font-size="45" font-weight="700" fill="#183851" >TiO₂ 薄膜工艺开发</text>
+<text x="1183" y="530" font-size="45" font-weight="700" fill="#183851" >TiO2 薄膜工艺开发</text>
 <line x1="1183" y1="566" x2="2116" y2="566" stroke="#D7E3E9" stroke-width="2" stroke-linecap="round"/>
 <text x="1187" y="866" font-size="27" font-weight="500" fill="#183348" >调控溅射功率、氧分压、沉积时间与膜厚</text>
 <text x="1187" y="907" font-size="25" font-weight="400" fill="#5B7384" >研究薄膜成核、生长及制备重复性</text>
@@ -45,7 +45,7 @@
 <text x="2345" y="461" font-size="23" font-weight="650" fill="#5B7384" letter-spacing="2">COMPOSITE DESIGN</text>
 <text x="2214" y="530" font-size="45" font-weight="700" fill="#183851" >复合结构与对照设计</text>
 <line x1="2214" y1="566" x2="3147" y2="566" stroke="#D7E3E9" stroke-width="2" stroke-linecap="round"/>
-<text x="2218" y="866" font-size="27" font-weight="500" fill="#183348" >以激光结构为模板沉积 TiO₂ 功能薄膜</text>
+<text x="2218" y="866" font-size="27" font-weight="500" fill="#183348" >以激光结构为模板沉积 TiO2 功能薄膜</text>
 <text x="2218" y="907" font-size="25" font-weight="400" fill="#5B7384" >比较结构参数 × 膜厚及 G0–G3 对照</text>
 <rect x="2212" y="940" width="938" height="57" rx="11" fill="#F2F8F9" stroke="none" stroke-width="1"/>
 <rect x="2213" y="952" width="6" height="33" rx="3" fill="#128A8B" stroke="none" stroke-width="1"/>
@@ -111,7 +111,7 @@
 <text x="1662" y="654" font-size="21" font-weight="600" fill="#5B7384" >Ti 靶材</text>
 <rect x="1566" y="758" width="281" height="13" rx="5" fill="#128A8B" stroke="none" stroke-width="1"/>
 <rect x="1566" y="772" width="281" height="21" rx="3" fill="#CDE5F2" stroke="#729AB0" stroke-width="2"/>
-<text x="1914" y="755" font-size="25" font-weight="700" fill="#128A8B" >TiO₂</text>
+<text x="1914" y="755" font-size="25" font-weight="700" fill="#128A8B" >TiO2</text>
 <text x="1915" y="787" font-size="21" font-weight="500" fill="#5B7384" >玻璃</text>
 <circle cx="1590" cy="696" r="5" fill="#6195B2" stroke="none" stroke-width="2"/>
 <path d="M 1590 706 l -3 35" fill="none" stroke="#6195B2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
@@ -132,7 +132,7 @@
 <circle cx="1814" cy="710" r="5" fill="#6195B2" stroke="none" stroke-width="2"/>
 <path d="M 1814 720 l -3 35" fill="none" stroke="#6195B2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
 <path d="M 1526 674 l -29 -20 l 0 93 l 29 -15" fill="none" stroke="#6195B2" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-<text x="1238" y="744" font-size="27" font-weight="650" fill="#183348" >Ar / O₂</text>
+<text x="1238" y="744" font-size="27" font-weight="650" fill="#183348" >Ar / O2</text>
 <text x="1236" y="779" font-size="22" font-weight="400" fill="#5B7384" >功率 · 厚度</text>
 <rect x="2243" y="610" width="237" height="39" rx="19" fill="#F2F8F9" stroke="none" stroke-width="1"/>
 <text x="2262" y="637" font-size="21" font-weight="600" fill="#128A8B" >CONTROLLED COMPARISON</text>
@@ -151,7 +151,7 @@
 <line x1="2718" y1="750" x2="2860" y2="750" stroke="#6195B2" stroke-width="3" stroke-linecap="round"/>
 <path d="M 2718 741 h 143" fill="none" stroke="#128A8B" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" />
 <rect x="2718" y="755" width="143" height="15" rx="2" fill="#CDE5F2" stroke="none" stroke-width="1"/>
-<text x="2789" y="788" font-size="20" font-weight="550" fill="#5B7384" text-anchor="middle">仅 TiO₂</text>
+<text x="2789" y="788" font-size="20" font-weight="550" fill="#5B7384" text-anchor="middle">仅 TiO2</text>
 <rect x="2919" y="674" width="180" height="121" rx="12" fill="#FFFFFF" stroke="#D9E6EB" stroke-width="2"/>
 <text x="3009" y="703" font-size="27" font-weight="750" fill="#128A8B" text-anchor="middle">G3</text>
 <path d="M 2941 751 l 14 -12 12 12 15 -14 13 14 13 -12 13 12 14 -14 13 14 12 -12 13 12 12 -10" fill="none" stroke="#6195B2" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
@@ -252,11 +252,6 @@
 <circle cx="2168" cy="1452" r="27" fill="#FFFFFF" stroke="#D7E3E9" stroke-width="2"/>
 <line x1="2158" y1="1452" x2="2178" y2="1452" stroke="#128A8B" stroke-width="4" stroke-linecap="round"/>
 <path d="M 2163 1444 L 2178 1452 L 2163 1460" fill="none" stroke="#128A8B" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
-<rect x="1362" y="1020" width="585" height="68" rx="34" fill="#FFFFFF" stroke="#D7E3E9" stroke-width="2"/>
-<circle cx="1406" cy="1054" r="20" fill="#F2F8F9" stroke="#128A8B" stroke-width="2"/>
-<line x1="1406" y1="1045" x2="1406" y2="1064" stroke="#128A8B" stroke-width="3" stroke-linecap="round"/>
-<path d="M 1414 1049 L 1406 1064 L 1398 1049" fill="none" stroke="#128A8B" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
-<text x="1443" y="1063" font-size="27" font-weight="600" fill="#183851" >样品构筑 → 系统验证与反馈优化</text>
 <rect x="120" y="1801" width="3062" height="152" rx="18" fill="#EAF3F5" stroke="none" stroke-width="1"/>
 <text x="151" y="1845" font-size="27" font-weight="700" fill="#183851" >关键评价维度</text>
 <line x1="380" y1="1825" x2="380" y2="1929" stroke="#D7E3E9" stroke-width="2" stroke-linecap="round"/>
@@ -272,6 +267,6 @@
 <circle cx="2452" cy="1851" r="8" fill="#CF9251" stroke="none" stroke-width="2"/>
 <text x="2472" y="1858" font-size="26" font-weight="700" fill="#183851" >稳定性</text>
 <text x="2472" y="1907" font-size="23" font-weight="450" fill="#5B7384" >耐磨 · 浸水 · UV · 冷热循环</text>
-<text x="121" y="2016" font-size="25" font-weight="650" fill="#183348" >研究路径：低散射微纳结构 → TiO₂ 定向覆盖与结构保留 → 界面功能调控 → 多目标优化</text>
+<text x="121" y="2016" font-size="25" font-weight="650" fill="#183348" >研究路径：低散射微纳结构 → TiO2 定向覆盖与结构保留 → 界面功能调控 → 多目标优化</text>
 <text x="3183" y="2018" font-size="22" font-weight="400" fill="#5B7384" text-anchor="end">示意研究计划 · 非实测结果</text>
 </svg>
